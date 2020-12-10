@@ -1,0 +1,4 @@
+#Thu Dec 10 23:04:00 PKT 2020
+base.0=/Users/hunainhumail/Documents/GIT PROJECTS/SAUDIA TEST/MessageBoard/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
