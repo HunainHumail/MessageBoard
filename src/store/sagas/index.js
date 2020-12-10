@@ -9,7 +9,7 @@ import {
 // Imports: Redux Sagas
 
 import {
-  getPosts
+  getPosts, getUsers
 } from "./HomeSaga";
 
 
@@ -18,5 +18,7 @@ export function* rootSaga() {
   yield all([
     //sagas will go here
     takeEvery(HomeActions.GET_POSTS, getPosts),
+    takeEvery(HomeActions.GET_USERS, getUsers),
+
   ]);
 }

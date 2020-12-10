@@ -1,7 +1,9 @@
 import { HomeActions } from "../actions";
 const INITIAL_STATE = {
   isLoading: false,
-  posts: []
+  isLoadingUser: false,
+  posts: [],
+  users:[]
 };
 
 function Reducer(state = INITIAL_STATE, action) {
@@ -13,6 +15,12 @@ function Reducer(state = INITIAL_STATE, action) {
     case HomeActions.GET_POSTS_FAIL:
       return { ...state, isLoading: false };
 
+    case HomeActions.GET_USERS:
+      return { ...state, isLoadingUser: true };
+    case HomeActions.GET_USERS_SUCCESS:
+      return { ...state, users: action.payload, isLoadingUser: false };
+    case HomeActions.GET_USERS_FAIL:
+      return { ...state, isLoadingUser: false };
 
     default:
       return state;

@@ -24,7 +24,7 @@ const App = (props) => {
       )}
         <NavigationContainer
           ref={(ref) => NavigationService.setTopLevelNavigator(ref)}
-          // theme={{ colors: { background: Colors.Primary } }}
+          theme={{ colors: { background: Colors.Primary } }}
         >
           <MainStack />
         </NavigationContainer>
